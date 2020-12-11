@@ -1,0 +1,21 @@
+/* FILTER BUTTONS SECTION */
+
+.btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+
+  @include for-size(tablet) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-bottom: 30px;
+  }
+
+  @include for-size(decktop) {
+    padding-bottom: 50px;
+  }
+
+  .list-item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

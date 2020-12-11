@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="" class="link logo"
+            ><span class="logo-item">Web</span>Studio</a
+          >
+          <button
+            type="button"
+            class="menu-btn"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              class="menu-icon"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-open" href="./images/icons/icons.svg#menu"></use>
+              <use
+                class="icon-close"
+                href="./images/icons/icons.svg#close"
+              ></use>
+            </svg>
+          </button>
+          <ul class="list nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="link nav-link current-page"
+                >Студия</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link nav-link">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="link nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list contacts-list">
+          <li class="cnts-item">
+            <a href="mailto:info@devstudio.com" class="link contacts-link">
+              <svg class="letter-icon">
+                <use href="./images/icons/icons.svg#letter"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="cnts-item">
+            <a href="tel:+380961111111" class="link contacts-link">
+              <svg class="smaptphone-icon">
+                <use href="./images/icons/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <!-- Modal menu -->
+
+        <div class="modal-nav-menu" id="menu-container" data-menu>
+          <ul class="list modal-nav-list">
+            <li class="item nav-item">
+              <a href="./index.html" class="link nav-link">Студия</a>
+            </li>
+            <li class="item nav-item">
+              <a href="./portfolio.html" class="link nav-link current-page"
+                >Портфолио</a
+              >
+            </li>
+            <li class="item nav-item">
+              <a href="#contacts" class="link nav-link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="list modal-cnt-list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link contacts-link">
+                <svg class="letter-icon">
+                  <use href="./images/icons/icons.svg#letter"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="cnts-item">
+              <a href="tel:+380961111111" class="link contacts-link">
+                <svg class="smaptphone-icon">
+                  <use href="./images/icons/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Projects</h1>
+          <ul class="list btn-list">
+            <li class="list-item">
+              <button type="button" class="filter-btn">Все</button>
+            </li>
+            <li class="list-item">
+              <button type="button" class="filter-btn">Веб-сайты</button>
+            </li>
+            <li class="list-item">
+              <button type="button" class="filter-btn">Приложения</button>
+            </li>
+            <li class="list-item">
+              <button type="button" class="filter-btn">Дизайн</button>
+            </li>
+            <li class="list-item">
+              <button type="button" class="filter-btn">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="list project-list">
+            <li class="project-card">
+              <a href="" class="project-link">
+                <div class="project-img-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/img1.webp    1x,
+                        ./images/projects/img1@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img1-tablet.webp    1x,
+                        ./images/projects/img1-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img1-mobile.webp    1x,
+                        ./images/projects/img1-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/img1.jpg    1x,
+                        ./images/projects/img1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img1-tablet.jpg    1x,
+                        ./images/projects/img1-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img1-mobile.jpg    1x,
+                        ./images/projects/img1-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/projects/img1.jpg"
+                      alt="ноутбук с открытой вэб-страницой"
+                    />
+                  </picture>
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-content">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project-kind">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project-link">
+                <div class="project-img-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/img2.webp    1x,
+                        ./images/projects/img2@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img2-tablet.webp    1x,
+                        ./images/projects/img2-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img2-mobile.webp    1x,
+                        ./images/projects/img2-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/img2.jpg    1x,
+                        ./images/projects/img2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img2-tablet.jpg    1x,
+                        ./images/projects/img2-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img2-mobile.jpg    1x,
+                        ./images/projects/img2-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/projects/img2.jpg"
+                      alt="Два баскетболиста"
+                    />
+                  </picture>
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-content">
+                      Постер New Orlean vs Golden Star - это не просто картинка,
+                      где изображено два баскетболиста. На самом деле тот что
+                      справка - гопник, который пытается отжать новый мяч. Но
+                      парень слева тоже не промах, мяч ведь известной китайской
+                      фирмы "АБИБАС"
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-text">
+                  <h2 class="project-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p>Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project-link">
+                <div class="project-img-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/img3.webp    1x,
+                        ./images/projects/img3@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img3-tablet.webp    1x,
+                        ./images/projects/img3-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img3-mobile.webp    1x,
+                        ./images/projects/img3-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/img3.jpg    1x,
+                        ./images/projects/img3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img3-tablet.jpg    1x,
+                        ./images/projects/img3-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img3-mobile.jpg    1x,
+                        ./images/projects/img3-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/projects/img3.jpg"
+                      alt="Логотип с рыбой"
+                    />
+                  </picture>
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-content">
+                      Ресторан Seafood - это одно их самых популярных приложений
+                      на планете. Здесь вы можете заказать на дом : морского
+                      ежа, осьминога, шпроты или просто сибаса.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title">Ресторан Seafood</h2>
+                  <p>Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project-link">
+                <div class="project-img-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/img4.webp    1x,
+                        ./images/projects/img4@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img4-tablet.webp    1x,
+                        ./images/projects/img4-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img4-mobile.webp    1x,
+                        ./images/projects/img4-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/img4.jpg    1x,
+                        ./images/projects/img4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img4-tablet.jpg    1x,
+                        ./images/projects/img4-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img4-mobile.jpg    1x,
+                        ./images/projects/img4-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/projects/img4.jpg" alt="Наушники" />
+                  </picture>
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-content">
+                      Проект Prime - помогает владельцам бизнеса. Как только вы
+                      скажете например, что Вам нужны новые носки, проэкт Prime
+                      все услышит и вы вскоре увидите рекламу в Instagram
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-text">
+                  <h2 class="project-title">Проект Prime</h2>
+                  <p>Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project-link">
+                <div class="project-img-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/img5.webp    1x,
+                        ./images/projects/img5@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img5-tablet.webp    1x,
+                        ./images/projects/img5-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img5-mobile.webp    1x,
+                        ./images/projects/img5-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/img5.jpg    1x,
+                        ./images/projects/img5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img5-tablet.jpg    1x,
+                        ./images/projects/img5-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img5-mobile.jpg    1x,
+                        ./images/projects/img5-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/projects/img5.jpg" alt="Две коробки" />
+                  </picture>
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-content">
+                      Проект Boxes - помогает найти все коробки в радиусе 100м,
+                      очень полезное приложение для любителей макулатуры
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title">Проект Boxes</h2>
+                  <p>Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project-link">
+                <div class="project-img-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/img6.webp    1x,
+                        ./images/projects/img6@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img6-tablet.webp    1x,
+                        ./images/projects/img6-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img6-mobile.webp    1x,
+                        ./images/projects/img6-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/img6.jpg    1x,
+                        ./images/projects/img6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img6-tablet.jpg    1x,
+                        ./images/projects/img6-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img6-mobile.jpg    1x,
+                        ./images/projects/img6-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/projects/img6.jpg"
+                      alt="Моноблок с открытой веб-страницой"
+                    />
+                  </picture>
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-content">
+                      Inspiration has no Borders - веб портал для людей, которые
+                      ищут вдохновения, например такие как я
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title">Inspiration has no Borders</h2>
+                  <p>Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project-link">
+                <div class="project-img-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/img7.webp    1x,
+                        ./images/projects/img7@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img7-tablet.webp    1x,
+                        ./images/projects/img7-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img7-mobile.webp    1x,
+                        ./images/projects/img7-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/img7.jpg    1x,
+                        ./images/projects/img7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img7-tablet.jpg    1x,
+                        ./images/projects/img7-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img7-mobile.jpg    1x,
+                        ./images/projects/img7-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/projects/img7.jpg"
+                      alt="Открытый журнал, со статьей"
+                    />
+                  </picture>
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-content">
+                      Limited Edition - женский журнал. В нем можно узнать как
+                      сушить волосы, сидеть и показывать два пальца вместе с
+                      подругой
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title">Издание Limited Edition</h2>
+                  <p>Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project-link">
+                <div class="project-img-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/img8.webp    1x,
+                        ./images/projects/img8@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img8-tablet.webp    1x,
+                        ./images/projects/img8-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img8-mobile.webp    1x,
+                        ./images/projects/img8-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/img8.jpg    1x,
+                        ./images/projects/img8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img8-tablet.jpg    1x,
+                        ./images/projects/img8-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img8-mobile.jpg    1x,
+                        ./images/projects/img8-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/projects/img8.jpg"
+                      alt="Открытый журнал, со статьей"
+                    />
+                  </picture>
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-content">
+                      Проект LAB - в расшифровке Live Arrive Buy
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title">Проект LAB</h2>
+                  <p>Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="" class="project-link">
+                <div class="project-img-box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/img9.webp    1x,
+                        ./images/projects/img9@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img9-tablet.webp    1x,
+                        ./images/projects/img9-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img9-mobile.webp    1x,
+                        ./images/projects/img9-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/img9.jpg    1x,
+                        ./images/projects/img9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img9-tablet.jpg    1x,
+                        ./images/projects/img9-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/img9-mobile.jpg    1x,
+                        ./images/projects/img9-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/projects/img9.jpg"
+                      alt="Открытый журнал, со статьей"
+                    />
+                  </picture>
+
+                  <div class="project-overlay">
+                    <p class="project-overlay-content">
+                      Данное приложение помогает владельцам бизнеса полностью не
+                      угробить его. Например: снижение затрат предприятия на
+                      корпоративный кофе, туалетную бумагу и отмена
+                      корпоративной связи
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title">Growing Business</h2>
+                  <p>Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div id="contacts" class="container">
+        <div class="adress-logo-box">
+          <a href="" class="link logo"
+            ><span class="logo-item">Web</span>Studio</a
+          >
+          <address class="contacts">
+            <ul class="list">
+              <li class="list-item">
+                <a
+                  href="https://goo.gl/maps/qRCtbatXRMtNsMS67"
+                  target="_blank"
+                  rel="noopener noreferer"
+                  class="link adress"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="list-item">
+                <a href="mailto:info@devstudio.com" class="link contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="list-item">
+                <a href="tel:+380961111111" class="link contacts-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="join-box">
+          <p class="join">присоединяйтесь</p>
+          <ul class="list social-list">
+            <li class="sl-item">
+              <a
+                href="https://instagram.com"
+                class="link social-link"
+                target="_blank"
+                rel="noopener noreferer"
+                aria-label="Instagram"
+              >
+                <svg class="social-icon">
+                  <use href="./images/icons/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sl-item">
+              <a
+                href="https://twitter.com"
+                class="link social-link"
+                target="blank"
+                rel="noopener noreferer"
+                aria-label="Twitter"
+              >
+                <svg class="social-icon">
+                  <use href="./images/icons/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sl-item">
+              <a
+                href="https://www.facebook.com"
+                class="link social-link"
+                target="blank"
+                rel="noopener noreferer"
+                aria-label="Facebook"
+              >
+                <svg class="social-icon">
+                  <use href="./images/icons/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sl-item">
+              <a
+                href="https://www.linkedin.com"
+                class="link social-link"
+                target="blank"
+                rel="noopener noreferer"
+                aria-label="Linkedin"
+              >
+                <svg class="social-icon">
+                  <use href="./images/icons/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe-box">
+          <p class="join">Подпишитесь на рассылку</p>
+          <form class="subsribe-form">
+            <label for="email"></label>
+            <input
+              type="email"
+              class="subscribe-input"
+              name="email"
+              id="email"
+              autocomplete="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button subscribe-btn">
+              Подписаться
+              <svg class="send-icon">
+                <use href="./images/icons/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

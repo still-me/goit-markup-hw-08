@@ -1,0 +1,61 @@
+/* ADVANTAGES */
+
+.advantages {
+  &-list {
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+
+  &-item {
+    margin-right: auto;
+    margin-left: auto;
+
+    @include for-size(mobile-only) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include for-size(tablet) {
+      margin: 15px;
+      width: calc((100% - 2 * 30px) / 2);
+    }
+
+    @include for-size(desktop) {
+      width: calc((100% - 4 * 30px) / 4);
+    }
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: $second-backgroung-color;
+    border-radius: 4px;
+  }
+
+  &-svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include for-size(tablet) {
+      text-align: left;
+    }
+  }
+}

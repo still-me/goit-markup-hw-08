@@ -1,0 +1,100 @@
+/* FOOTER */
+
+.footer {
+  background: #2f303a;
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include for-size(desktop) {
+      align-items: baseline;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.adress-logo-box {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include for-size(tablet) {
+    width: 50%;
+  }
+
+  @include for-size(desktop) {
+    width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0px;
+
+    text-align: left;
+  }
+}
+.adress {
+  color: $white;
+}
+
+.contacts {
+  font-style: inherit;
+
+  .contacts-link {
+    display: inline-flex;
+    font-weight: inherit;
+  }
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @include for-size(desktop) {
+    margin-bottom: 9px;
+  }
+}
+
+.join-box {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include for-size(tablet) {
+    width: 50%;
+  }
+
+  @include for-size(desktop) {
+    width: 206px;
+    height: 80px;
+
+    margin-right: 93px;
+    margin-bottom: 0px;
+
+    text-align: left;
+  }
+}
+
+.join {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $white;
+}
+
+.subscribe-box {
+  text-align: center;
+
+  @include for-size(tablet) {
+    width: 450px;
+  }
+
+  @include for-size(desktop) {
+    text-align: left;
+    width: auto;
+  }
+}
